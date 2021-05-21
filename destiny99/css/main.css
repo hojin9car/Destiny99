@@ -1,0 +1,73 @@
+.container {
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.vid-header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.fullscreen-vid-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullscreen-vid-wrap video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* 비디오 위에 글자 잘 보이게 막을 만들어 놓음 */
+.header-overlay {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #225470;
+  z-index: 1;     /* 1층 */
+  opacity: 0.4;
+  overflow: hidden;
+}
+
+.header-content {
+  z-index: 2;   /* 2층 */
+}
+
+.header-content h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.header-content p {
+  font-size: 1.5rem;
+  display: block;
+  padding-bottom: 2rem;
+  margin-bottom: 0;
+}
+
+.start-btn {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+/* 디스플레이 크기가 달라져도 간격 유지 */
+@media(max-width: 960px) {
+  .container {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
