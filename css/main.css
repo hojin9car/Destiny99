@@ -46,22 +46,17 @@
 }
 
 .header-content h1 {
-  font-size: 50px;
+  font-size: 70px;
   margin-bottom: 10px;
+  text-align: center;
+  padding-right: 5px;
 }
 
 .header-content p {
   font-size: 1.5rem;
   display: block;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   margin-bottom: 0;
-}
-
-.start-btn {
-  font-size: 1.2rem;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  border-radius: 20px;
 }
 
 /* 디스플레이 크기가 달라져도 간격 유지 */
