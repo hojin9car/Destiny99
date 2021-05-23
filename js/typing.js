@@ -15,4 +15,3 @@ var repeat = setInterval(function () {
   typing;
   clearInterval(handle);
 }, 1000)
-
