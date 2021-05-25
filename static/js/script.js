@@ -2,20 +2,20 @@ const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
 const endPoint = 14;
-const select = [0,0,0];
+const select = [0, 0, 0];
 
-function calResult(){
+function calResult() {
   var result = select.indexOf(Math.max(...select));
   return result;
 }
-function setResult(){
+function setResult() {
   let point = calResult();
   const resultName = document.querySelector('.resultname');
   resultName.innerHTML = infoList[point].name;
 
   var resultImg = document.createElement('img');
   const imgDiv = document.querySelector('#resultImg');
-  var imgURL = 'img/image-' + point + '.png';
+  var imgURL = '../static/img/image-' + point + '.png';
   resultImg.src = imgURL;
   resultImg.alt = point;
   resultImg.classList.add('img-fluid');
@@ -35,10 +35,9 @@ function goResult() {
     setTimeout(() => {
       qna.style.display = "none";
       result.style.display = "flex";
-    }, 400)
-    setResult();
+    }, 400);
   })
-  calResult();
+  setResult();
 }
 
 function addAnswer(answerText, qIdx, idx) {
@@ -61,8 +60,8 @@ function addAnswer(answerText, qIdx, idx) {
     }
     setTimeout(() => {
       var target = qnaList[qIdx].a[idx].type;
-      for(let j=0; j < target.length; j++){
-        select[target[j]-1] += 1;
+      for (let j = 0; j < target.length; j++) {
+        select[target[j] - 1] += 1;
       }
       for (let i = 0; i < children.length; i++) {
         children[i].style.display = 'none';
