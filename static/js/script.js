@@ -60,9 +60,9 @@ function addAnswer(answerText, qIdx, idx) {
       children[i].style.animation = "fadeOut 0.5s";
     }
     setTimeout(() => {
-      var target = qnaList[qIdx].a[idx];
-      for(let j=0; j < target.type.length; j++){
-        select[target[j]] += 1;
+      var target = qnaList[qIdx].a[idx].type;
+      for(let j=0; j < target.length; j++){
+        select[target[j]-1] += 1;
       }
       for (let i = 0; i < children.length; i++) {
         children[i].style.display = 'none';
