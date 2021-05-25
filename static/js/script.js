@@ -3,7 +3,7 @@ const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
 const endPoint = 10;
 
-function goResult(){
+function goResult() {
   qna.style.WebkitAnimation = "fadeOut 1s";
   qna.style.animation = "fadeOut 1s";
   setTimeout(() => {
@@ -12,11 +12,12 @@ function goResult(){
     setTimeout(() => {
       qna.style.display = "none";
       qna.style.display = "flex";
-    }, 400)})
+    }, 400)
+  })
 }
 
-function addAnswer(answerText,qIdx){
-  var a =document.querySelector('.answerBox');
+function addAnswer(answerText, qIdx) {
+  var a = document.querySelector('.answerBox');
   var answer = document.createElement('button');
   answer.classList.add('answerList');
   answer.classList.add('my-4');
@@ -26,33 +27,33 @@ function addAnswer(answerText,qIdx){
   a.appendChild(answer);
   answer.innerHTML = answerText;
 
-  answer.addEventListener("click",function(){
-    var children= document.querySelectorAll('.answerList');
-    for(let i=0; i<children.length; i++){
+  answer.addEventListener("click", function () {
+    var children = document.querySelectorAll('.answerList');
+    for (let i = 0; i < children.length; i++) {
       children[i].disabled = true;
       children[i].style.WebkitAnimation = "fadeOut 0.5s";
       children[i].style.animation = "fadeOut 0.5s";
     }
     setTimeout(() => {
-      for(let i=0; i<children.length; i++){
+      for (let i = 0; i < children.length; i++) {
         children[i].style.display = 'none';
       }
-      goNext(qIdx+1);
-    },350)
+      goNext(qIdx + 1);
+    }, 350)
   }, false);
 }
-function goNext(qIdx){
-  if(qIdx+1 === endPoint){
+function goNext(qIdx) {
+  if (qIdx === endPoint) {
     goResult();
     return;
   }
   var q = document.querySelector('.qBox');
   q.innerHTML = qnaList[qIdx].q;
-  for(let i in qnaList[qIdx].a){
-    addAnswer(qnaList[qIdx].a[i].answer,qIdx);
+  for (let i in qnaList[qIdx].a) {
+    addAnswer(qnaList[qIdx].a[i].answer, qIdx, i);
   }
   var status = document.querySelector('.statusBar');
-  status.style.width = (100/endPoint) * (qIdx+1) + '%';
+  status.style.width = (100 / endPoint) * (qIdx + 1) + '%';
 }
 
 
