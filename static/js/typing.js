@@ -5,13 +5,13 @@ let index = 0;
 function typing() {
   text.textContent += content[index++];
   if (index == content.length) {
-    text.textContent = ""
-    index = 0;
+    text.textContent = "D"
+    index = 1;
   }
 }
 
 let handle = setInterval(typing, 100)
 var repeat = setInterval(function () {
-  typing;
+  typing();
   clearInterval(handle);
 }, 1000)
