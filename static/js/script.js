@@ -43,7 +43,7 @@ function addAnswer(answerText, qIdx) {
   }, false);
 }
 function goNext(qIdx) {
-  if (qIdx === endPoint) {
+  if (++qIdx === endPoint) {
     goResult();
     return;
   }
