@@ -11,10 +11,11 @@ function goResult() {
     result.style.animation = "fadeIn 1s";
     setTimeout(() => {
       qna.style.display = "none";
-      qna.style.display = "flex";
+      result.style.display = "flex";
     }, 400)
   })
 }
+
 
 function addAnswer(answerText, qIdx) {
   var a = document.querySelector('.answerBox');
@@ -43,7 +44,7 @@ function addAnswer(answerText, qIdx) {
   }, false);
 }
 function goNext(qIdx) {
-  if (++qIdx === endPoint) {
+  if (qIdx === endPoint) {
     goResult();
     return;
   }
