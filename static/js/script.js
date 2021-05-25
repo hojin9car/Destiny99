@@ -1,7 +1,7 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
-const endPoint = 15;
+const endPoint = 14;
 
 function goResult() {
   qna.style.WebkitAnimation = "fadeOut 1s";
@@ -43,7 +43,7 @@ function addAnswer(answerText, qIdx) {
   }, false);
 }
 function goNext(qIdx) {
-  if (qIdx === endPoint) {
+  if (++qIdx === endPoint) {
     goResult();
     return;
   }
