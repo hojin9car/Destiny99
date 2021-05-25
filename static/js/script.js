@@ -8,6 +8,7 @@ function calResult() {
   var result = select.indexOf(Math.max(...select));
   return result;
 }
+
 function setResult() {
   let point = calResult();
   const resultName = document.querySelector('.resultname');
@@ -23,7 +24,6 @@ function setResult() {
 
   const resultDesc = document.querySelector('.resultDesc');
   resultDesc.innerHTML = infoList[point].desc;
-
 }
 
 function goResult() {
@@ -83,7 +83,6 @@ function goNext(qIdx) {
   var status = document.querySelector('.statusBar');
   status.style.width = (100 / endPoint) * (qIdx + 1) + '%';
 }
-
 
 // 시작 버튼 클릭 시 qna로 이동
 function begin() {
