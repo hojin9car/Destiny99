@@ -14,4 +14,4 @@ let handle = setInterval(typing, 1000)
 var repeat = setInterval(function () {
   typing();
   clearInterval(handle);
-}, 600)
+}, 380)
