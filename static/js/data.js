@@ -3,13 +3,13 @@ const qnaList = [
     q: 'Q1. 괜히 신경쓰인다',
     a: [
       { answer: 'a. YES', type: [1] },
-      { answer: 'b. NO', type: [2 , 3] },
+      { answer: 'b. NO', type: [2, 3] },
     ]
   },
   {
-    q: 'Q2. "ㄴ란지금츄ㅣㅏ해써델ㅇㅓ와ㅑ" 라는 카톡이 친구에게 왔다. 나의 답변은?',
+    q: 'Q2. 아래와 같이 카톡이 친구에게 왔다. 나의 답변은?',
     a: [
-      { answer: 'a. 취했으니까 데리러 오라고??', type: [2 , 3] },
+      { answer: 'a. 취했으니까 데리러 오라고??', type: [2, 3] },
       { answer: 'b. 엥 뭐야 똑바로 말해!', type: [1] },
     ]
   },
@@ -17,27 +17,27 @@ const qnaList = [
     q: 'Q3. 친구가 오늘 자신이 당한 부당한 일에 대해 열변을 토하고 있다. 근데 과장이 조금 섞여 있는 것 같다.',
     a: [
       { answer: 'a. 나는 무조건 내가 직접 눈으로 봐야 믿음이 간다.', type: [1] },
-      { answer: 'b. 보이지 않더라도 논리에 맞다면 충분히 믿을만 하다.', type: [2 , 3] },
+      { answer: 'b. 보이지 않더라도 논리에 맞다면 충분히 믿을만 하다.', type: [2, 3] },
     ]
   },
   {
     q: 'Q4. 노트북 자판에 먼지가 꼈다. 당신의 행동은?',
     a: [
       { answer: 'a. 보기 싫어! 당장 치운다.', type: [1] },
-      { answer: 'b. 에이, 잘 돌아가면 됐지. 그대로 둔다.', type: [2 , 3] },
+      { answer: 'b. 에이, 잘 돌아가면 됐지. 그대로 둔다.', type: [2, 3] },
     ]
   },
   {
     q: 'Q5. 새로 접하는 운동을 하기 전에 당신의 행동은?',
     a: [
       { answer: 'a. 운동은 장비빨이지~! 장비 풀세트 구매', type: [1] },
-      { answer: 'b. 장비는 나중에, 일단 해보자!', type: [2 , 3] },
+      { answer: 'b. 장비는 나중에, 일단 해보자!', type: [2, 3] },
     ]
   },
   {
     q: 'Q6. 카톡 안읽은 메세지가 300+ 떠있는 친구를 보았다 당신의 리액션은?',
     a: [
-      { answer: 'a. 어, 나도 이러는데 너도네? ㅋㅋ', type: [2 , 3] },
+      { answer: 'a. 어, 나도 이러는데 너도네? ㅋㅋ', type: [2, 3] },
       { answer: 'b. 극혐;; 읽을 건 읽어라~라고 한마디 한다.', type: [1] },
     ]
   },
@@ -45,21 +45,21 @@ const qnaList = [
     q: 'Q7. 나의 취향은?',
     a: [
       { answer: 'a. 주인공이 개짱센 다 때려 부수는 판타지 소설', type: [1] },
-      { answer: 'b. 가슴이 선덕선덕해지는 로맨스 소설', type: [2 , 3] },
+      { answer: 'b. 가슴이 선덕선덕해지는 로맨스 소설', type: [2, 3] },
     ]
   },
   {
     q: 'Q8. 신상품이 나왔을 때, 당신의 반응은?',
     a: [
       { answer: 'a. 나는 얼리어답터! 제일 먼저 사서 어떤 기능이 있는지 써보고 싶다.', type: [1] },
-      { answer: 'b. 늦더라도 다른 사람의 구매 후기와 리뷰를 꼼꼼하게 보고 사고 싶다.', type: [2 , 3] },
+      { answer: 'b. 늦더라도 다른 사람의 구매 후기와 리뷰를 꼼꼼하게 보고 사고 싶다.', type: [2, 3] },
     ]
   },
   {
     q: 'Q9. 냉장고를 구매하려고 한다. 성능은 똑같으나 내가 원하는 색으로 구매하려면 50만원을 더 내야한다. 당신의 선택은?',
     a: [
       { answer: 'a. 냉장고는 오래쓰는 제품이니까 내가 좋아하는 색으로 고르는 게 당연하다.', type: [1] },
-      { answer: 'b. 성능이 똑같은데 색상이 무슨 상관인가. 기본으로 고르고 그 50만원으로 다른 걸 구매한다.', type: [2 , 3] },
+      { answer: 'b. 성능이 똑같은데 색상이 무슨 상관인가. 기본으로 고르고 그 50만원으로 다른 걸 구매한다.', type: [2, 3] },
     ]
   },
 
@@ -90,7 +90,7 @@ const qnaList = [
     q: 'Q13. 제주도로 친구들과 여행을 가는데 숙소를 고민하는 중이다.',
     a: [
       { answer: 'a. 오랜 역사가 묻어나는 제주 돌담집이 딱!!!', type: [2] },
-      { answer: 'b. 도심의 모던하고 편리한 호텔!!!', type: [1,3] },
+      { answer: 'b. 도심의 모던하고 편리한 호텔!!!', type: [1, 3] },
     ]
   },
   {
@@ -103,23 +103,23 @@ const qnaList = [
   },
 ]
 
-const infoList =[
+const infoList = [
   {
-    name : 'Front-end Developer(React)',
+    name: 'Front-end Developer(React)',
     desc: '대세에 민감하고, 뭐 하나를 사더라도 내 마음에 쏙 들어야 살 수 있는 당신은 천상 프론트엔드 개발자!</br>' +
-        ' 항해99에서는 주특기로 React를 선택하는 것을 추천합니다!</br>' +
-        ' <a style="color:lightskyblue" href="https://www.notion.so/React-Q-A-8283090055804294a83aeb5a493252bd" target="_blank">리액트 관련 1기의 질문 보러 가기</a>'
+      ' 항해99에서는 주특기로 React를 선택하는 것을 추천합니다!</br>' +
+      ' <a style="color:lightskyblue" href="https://www.notion.so/React-Q-A-8283090055804294a83aeb5a493252bd" target="_blank">리액트 관련 1기의 질문 보러 가기</a>'
   },
   {
-    name : 'Back-end Developer(Spring)',
+    name: 'Back-end Developer(Spring)',
     desc: '나는 천상 백엔드 개발자!</br> ' +
-        '그 중에서도 모르는 것이 생겼을 때 구글링이 편하고, 이미 많은 데이터셋을 가지고 있는 Spring과 궁합이 잘 맞아요!</br>' +
-        '<a style="color:lightskyblue" href="https://www.notion.so/Spring-Q-A-0eeb5c78288b453b9bcf9c1256fecfa4" target="_blank">Spring 관련 1기의 질문 보러 가기</a>'
+      '그 중에서도 모르는 것이 생겼을 때 구글링이 편하고, 이미 많은 데이터셋을 가지고 있는 Spring과 궁합이 잘 맞아요!</br>' +
+      '<a style="color:lightskyblue" href="https://www.notion.so/Spring-Q-A-0eeb5c78288b453b9bcf9c1256fecfa4" target="_blank">Spring 관련 1기의 질문 보러 가기</a>'
   },
   {
-    name : 'Back-end Developer(Node.js)',
-    desc: '나는 천상 백엔드 개발자! 그 중에서도 새로 개척해나가는 것이 좋아요!</br>'+
-        ' 항해99에서는 주특기로 Node.js를 선택하는 것을 추천합니다!</br>'
-        +'<a style="color:lightskyblue" href="https://www.notion.so/Node-js-Q-A-b5424f6388e8400f960c7417b60a643a" target="_blank">Node.js 관련 1기의 질문 보러 가기</a>'
+    name: 'Back-end Developer(Node.js)',
+    desc: '나는 천상 백엔드 개발자! 그 중에서도 새로 개척해나가는 것이 좋아요!</br>' +
+      ' 항해99에서는 주특기로 Node.js를 선택하는 것을 추천합니다!</br>'
+      + '<a style="color:lightskyblue" href="https://www.notion.so/Node-js-Q-A-b5424f6388e8400f960c7417b60a643a" target="_blank">Node.js 관련 1기의 질문 보러 가기</a>'
   },
 ]
