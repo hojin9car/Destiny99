@@ -108,18 +108,18 @@ const infoList = [
     name: 'Front-end Developer(React)',
     desc: '대세에 민감하고, 뭐 하나를 사더라도 내 마음에 쏙 들어야 살 수 있는 당신은 천상 프론트엔드 개발자!</br>' +
       ' 항해99에서는 주특기로 React를 선택하는 것을 추천합니다!</br>' +
-      ' <a style="color:lightskyblue" href="https://www.notion.so/React-Q-A-8283090055804294a83aeb5a493252bd" target="_blank">리액트 관련 1기의 질문 보러 가기</a>'
+      ' <a style="color:lightskyblue" href="https://www.notion.so/React-Q-A-8283090055804294a83aeb5a493252bd" target="_blank">리액트 관련 항해99 1기의 질문 보러 가기</a>'
   },
   {
     name: 'Back-end Developer(Spring)',
     desc: '나는 천상 백엔드 개발자!</br> ' +
       '그 중에서도 모르는 것이 생겼을 때 구글링이 편하고, 이미 많은 데이터셋을 가지고 있는 Spring과 궁합이 잘 맞아요!</br>' +
-      '<a style="color:lightskyblue" href="https://www.notion.so/Spring-Q-A-0eeb5c78288b453b9bcf9c1256fecfa4" target="_blank">Spring 관련 1기의 질문 보러 가기</a>'
+      '<a style="color:lightskyblue" href="https://www.notion.so/Spring-Q-A-0eeb5c78288b453b9bcf9c1256fecfa4" target="_blank">Spring 관련 항해99 1기의 질문 보러 가기</a>'
   },
   {
     name: 'Back-end Developer(Node.js)',
     desc: '나는 천상 백엔드 개발자! 그 중에서도 새로 개척해나가는 것이 좋아요!</br>' +
       ' 항해99에서는 주특기로 Node.js를 선택하는 것을 추천합니다!</br>'
-      + '<a style="color:lightskyblue" href="https://www.notion.so/Node-js-Q-A-b5424f6388e8400f960c7417b60a643a" target="_blank">Node.js 관련 1기의 질문 보러 가기</a>'
+      + '<a style="color:lightskyblue" href="https://www.notion.so/Node-js-Q-A-b5424f6388e8400f960c7417b60a643a" target="_blank">Node.js 관련 항해99 1기의 질문 보러 가기</a>'
   },
 ]
