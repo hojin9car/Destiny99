@@ -41,6 +41,7 @@ function goResult() {
 }
 
 function addQnaImg(qIdx) {
+  $('#qnaImg').empty();
   var i = document.querySelector('#qnaImg');
   var img = document.createElement('img');
   var imgURL = '../static/img/Q' + qIdx + '.png';
