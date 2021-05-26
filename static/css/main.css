@@ -43,7 +43,7 @@
 
 .header-content {
   z-index: 2;   /* 2층 */
-  width: 80%;
+  width: 100%;
 }
 
 .header-content h1 {
