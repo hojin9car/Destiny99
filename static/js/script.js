@@ -91,8 +91,8 @@ function goNext(qIdx) {
   q.innerHTML = qnaList[qIdx].q;
   for (let i in qnaList[qIdx].a) {
     addAnswer(qnaList[qIdx].a[i].answer, qIdx, i);
-    addQnaImg(qIdx);
   }
+  addQnaImg(qIdx);
   var status = document.querySelector('.statusBar');
   status.style.width = (100 / endPoint) * (qIdx + 1) + '%';
 }
