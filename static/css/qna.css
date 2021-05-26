@@ -48,6 +48,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 }
 
 .status{
+  display: none;
   height:30px;
   width:500px;
   background-color: white;
