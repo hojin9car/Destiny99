@@ -15,6 +15,17 @@ function addResult(point) {
     })
 }
 
+function postResult(point) {
+    $.ajax({
+        type: "GET",
+        url: "/api/postResult?idx="+point,
+        data: {},
+        success: function (response) {
+            alert(response["msg"]);
+        }
+    })
+}
+
 function calResult() {
     var result = select.indexOf(Math.max(...select));
     return result;
