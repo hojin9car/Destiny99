@@ -9,19 +9,35 @@ function addResult(point) {
         type: "GET",
         url: "/api/addResult?idx="+point,
         data: {},
+        async:false,
         success: function (response) {
-            alert(response["msg"]);
         }
     })
 }
 
-function postResult(point) {
+function postResult() {
     $.ajax({
         type: "GET",
-        url: "/api/postResult?idx="+point,
+        url: "/api/postResult",
         data: {},
+        async:false,
         success: function (response) {
-            alert(response["msg"]);
+            var json=response['result'];
+            var react,node,spring;
+            for(var i=0;i<3;i++){
+                if(json[i]['name']=="react"){
+                    react=json[i]["count"]
+                }
+                if(json[i]['name']=="node"){
+                    node=json[i]["count"]
+                }
+                if(json[i]['name']=="spring"){
+                    spring=json[i]["count"]
+                }
+            }
+            var total = react+node+spring;
+            const allResult = document.querySelector('.allResult');
+            allResult.innerHTML = `<br>현재 ${total}명이 이 테스트를 하였습니다.<br> 그 중 React는 ${react}명, Spring은 ${spring}명, Node.js는 ${node}명의 결과가 나왔습니다.<br>`
         }
     })
 }
@@ -32,9 +48,9 @@ function calResult() {
 }
 
 function setResult() {
-    console.log(select);
     let point = calResult();
     addResult(point);
+    postResult();
     const resultName = document.querySelector('.resultname');
     resultName.innerHTML = infoList[point].name;
 
