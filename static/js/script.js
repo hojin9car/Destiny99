@@ -4,10 +4,10 @@ const result = document.querySelector("#result");
 const endPoint = 14;
 const select = [0, 0, 0];
 
-function addResult() {
+function addResult(point) {
     $.ajax({
         type: "GET",
-        url: "/api/addResult?idx=1",
+        url: "/api/addResult?idx="+point,
         data: {},
         success: function (response) {
             alert(response["msg"]);
@@ -21,7 +21,9 @@ function calResult() {
 }
 
 function setResult() {
+    console.log(select);
     let point = calResult();
+    addResult(point);
     const resultName = document.querySelector('.resultname');
     resultName.innerHTML = infoList[point].name;
 
