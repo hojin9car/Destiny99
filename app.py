@@ -1,7 +1,11 @@
-from flask import Flask, render_template, request
+from pymongo import MongoClient
+
+from flask import Flask, render_template, jsonify, request
 
 app = Flask(__name__)
 
+client = MongoClient('localhost', 27017)
+db = client.destiny99
 
 @app.route('/')
 def home():
@@ -14,17 +18,31 @@ def add_results():
     print(index)
 
     if (index==0):
-        react +1;
-    elif (index==1):
-        spring +1;
-    else:
-        node +1;
+        results = db.result.find_one({'name': "react"})
+        current_count = results['count']
+        new_count = current_count + 1
 
-    return jsonify({'msg': '저장되었습니다.'})
+        db.result.update_one({'name': "react"}, {'$set': {'count': new_count}})
+
+    elif (index==1):
+        results = db.result.find_one({'name': "spring"})
+        current_count = results['count']
+        new_count = current_count + 1
+
+        db.result.update_one({'name': "spring"}, {'$set': {'count': new_count}})
+
+    else:
+        results = db.result.find_one({'name': "node"})
+        current_count = results['count']
+        new_count = current_count + 1
+
+        db.result.update_one({'name': "node"}, {'$set': {'count': new_count}})
+
+    return jsonify({'msg': '제정신이 아닙니다'})
 
 @app.route('/api/postResult', methods=['GET'])
 def post_results():
     results = list(db.results.find({},{'_id':False}))
-    return jsonify({'react': react, 'spring': spring, 'node': node})
+    return jsonify({'result': results})
 
 app.run('0.0.0.0', port=5000, debug=True)
